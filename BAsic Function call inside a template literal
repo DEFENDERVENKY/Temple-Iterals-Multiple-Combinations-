@@ -1,0 +1,13 @@
+# Function call inside a template literal
+
+# You can even call functions within template literals.
+
+function greet(name) {
+    return `Hello, ${name}!`;
+}
+
+console.log(`${greet('Alice')}, welcome to JavaScript!`);
+
+//output//
+
+Hello, Alice! , welcome to JavaScript!
