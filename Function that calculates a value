@@ -1,0 +1,13 @@
+# Function that calculates a value
+In this example, a function calculates the square of a number, and we embed the result in the template literal.
+
+function square(num) {
+    return num * num;
+}
+
+let a = 5;
+console.log(`The square of ${a} is ${square(a)}.`);
+
+// output//
+
+The square of 5 is 25.
