@@ -1,0 +1,21 @@
+# Combining multiple functions
+# Here, we call two different functions to build a more complex message in the template literal.
+
+# [\]COde] 
+
+function greet(name) {
+    return `Hello, ${name}`;
+}
+
+function getTimeOfDay() {
+    const hours = new Date().getHours();
+    return hours < 12 ? 'morning' : hours < 18 ? 'afternoon' : 'evening';
+}
+
+let name = "Alice";
+console.log(`${greet(name)}, good ${getTimeOfDay()}!`);
+
+
+// Output //
+Hello, Alice, good morning!
+
