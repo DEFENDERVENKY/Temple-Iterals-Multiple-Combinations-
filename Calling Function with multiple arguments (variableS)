@@ -1,0 +1,10 @@
+# Function with multiple arguments
+# A function that takes two arguments and returns their product, embedded within a template literal. 
+
+function multiply(x, y) {
+    return x * y;
+}
+
+let num1 = 6;
+let num2 = 7;
+console.log(`The product of ${num1} and ${num2} is ${multiply(num1, num2)}.`);
