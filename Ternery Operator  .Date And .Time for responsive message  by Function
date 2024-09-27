@@ -1,0 +1,27 @@
+Name can be modified outside the function
+
+function greet(name) {
+    return `Hello, ${name}`;
+}
+
+function getTimeOfDay() {
+    const hours = new Date().getHours();
+    return hours < 12 ? 'morning' : hours < 18 ? 'afternoon' : 'evening';
+}
+
+let name = "Alice";
+console.log(`${greet(name)}, good ${getTimeOfDay()}!`);         //Output :Hello, Alice, good afternoon!
+
+
+----------------------------------------------------------------------------------------------
+INbuild-NAme
+function greet(name ='Aice'){
+    return `Hello, ${name}`;
+}
+
+function getTimeOfDay() {
+    const hours = new Date().getHours();
+    return hours < 12 ? 'morning' : hours < 18 ? 'afternoon' : 'evening';
+}
+
+console.log(`${greet()}, good ${getTimeOfDay()}!`);             //Output :Hello, Alice, good afternoon!
